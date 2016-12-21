@@ -1,0 +1,22 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite {
+    background-image: url(spritesheet.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-gift-icon {
+        .stitches-sprite(-5px, -5px, 64px, 76px);
+    }
+
+    &.sprite-hamburger-icon {
+        .stitches-sprite(-5px, -91px, 74px, 70px);
+    }
+
+    &.sprite-home-icon {
+        .stitches-sprite(-5px, -171px, 75px, 72px);
+    }
+}

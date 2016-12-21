@@ -429,7 +429,10 @@ body {
   width: 1200px;
   margin: 0 auto;
 
+  text-transform: uppercase;
+
   color: #000;
+  outline: 1px solid black;
   background-color: #fff;
 }
 .navigation {
@@ -479,7 +482,6 @@ body {
 .navigation__link {
   cursor: pointer;
   text-decoration: none;
-  text-transform: uppercase;
 
   color: #000;
 }
@@ -501,4 +503,142 @@ body {
   background-repeat: no-repeat no-repeat;
   background-position: 0 bottom, center top;
   background-size: contain, cover;
+}
+.reasons__title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+
+  margin: 0 0 18px 0;
+  padding: 0 370px;
+
+  text-align: center;
+}
+.reasons__description {
+  font-size: 14px;
+  line-height: 26px;
+
+  margin: 0 0 54px 0;
+  padding: 0;
+
+  text-align: center;
+}
+.reasons__row {
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+
+  margin-bottom: 60px;
+}
+.reasons__row--grey {
+  background-color: #eee;
+}
+.reasons__row:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.reason {
+  overflow: hidden;
+
+  width: 400px;
+  height: 145px;
+  padding: 55px 60px;
+
+  text-align: center;
+}
+.reason--blue {
+  color: #fff;
+  background-color: #81b3d2;
+}
+.reason__title {
+  font-size: 21px;
+  line-height: 21px;
+
+  margin: 0 0 26px 0;
+}
+.reason__number {
+  font-size: 14px;
+  line-height: 24px;
+
+  position: relative;
+
+  display: inline-block;
+
+  margin-bottom: 26px;
+  padding: 0 15px 0;
+}
+.reason__number::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  content: "\2012";
+}
+.reason__number::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+
+  content: "\2012";
+}
+.reason__content {
+  font-size: 14px;
+  line-height: 24px;
+
+  margin: 0;
+  padding: 0;
+}
+.reason__description {
+  font-size: 14px;
+  line-height: 24px;
+}
+.reason-picture {
+  display: inline-block;
+
+  width: 800px;
+  height: 255px;
+}
+.recomends {
+  display: -ms-flexbox;
+  display: flex;
+}
+.recomends__item {
+  text-align: center;
+}
+.recomends__icon {
+  display: inline-block;
+
+  width: 75px;
+  height: 75px;
+  margin-bottom: 35px;
+
+  background-image: url("../img/recomends-sptite.png");
+  background-repeat: no-repeat;
+}
+.recomends__icon--home {
+  background-position: -5px -168px;
+}
+.recomends__icon--food {
+  background-position: -5px -86px;
+}
+.recomends__icon--gift {
+  background-position: -5px -5px;
+}
+.recomends__title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+
+  margin-bottom: 29px;
+}
+.recomends__content {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  margin: 0;
+  padding: 0;
 }
