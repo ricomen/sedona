@@ -687,6 +687,11 @@ body {
 .search-form__row:last-child {
   margin-bottom: 0;
 }
+.search-form__col {
+  font-size: 0;
+
+  width: 228px;
+}
 .search-form__col:before,
 .search-form__col:after {
   display: table;
@@ -701,6 +706,8 @@ body {
 }
 .search-form__col:last-child {
   float: right;
+
+  width: 180px;
 }
 .search-form__label,
 .search-form__field,
@@ -730,19 +737,33 @@ body {
   outline: none;
   background-color: #f2f2f2;
 }
-.search-form__amount {
+.number {
+  float: right;
+}
+.number__field {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 26px;
+
   width: 38px;
   padding: 6px 0;
 
   text-align: center;
+  text-transform: uppercase;
 
   border: none;
   outline: none;
   background-color: #f2f2f2;
 }
-.search-form__btn {
+.number__btn {
+  font-size: 16px;
+
   width: 38px;
   height: 38px;
+  margin: 0;
+  padding: 0;
 
   border: none;
   outline: none;
