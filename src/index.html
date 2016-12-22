@@ -110,22 +110,41 @@
           <span class="reason__number">5</span>
           <p class="reason__content">Большинство едет в гранд каньон и толпиться там</p>
         </div>
-      </div>
-
-      
+      </div>     
     
 
     </section>
 
     <section class="search-hotel">
-      <div><b>Заинтересовались?</b></div>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <h2 class="search-hotel__title">Заинтересовались?</h2>
+      <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <a href="#" class="search-btn">Поиск гостиницы в седоне</a>
+
+    </section>
+    <section class="map">
       <form class="search-form" action="/" method="get">
-        <label for="">Дата заезда:</label><input type="date" name="firstDate">
-        <label for="">Дата выезда:</label><input type="date" name="lastDate">
-        <span>+</span><input type="text"><span>-</span>
-        <span>+</span><input type="text"><span>-</span>
-        <button type="submit"></button>        
+
+        <div class="search-form__row">
+          <label class="search-form__label">Дата заезда:</label><input class="search-form__field" type="date" name="firstDate">
+        </div>
+
+        <div class="search-form__row">
+          <label class="search-form__label">Дата выезда:</label><input class="search-form__field" type="date" name="lastDate">
+        </div>
+
+        <div class="search-form__row">
+          <div class="search-form__col">
+            <label class="search-form__label" for="">Взрослые:</label>
+            <button class="search-form__btn  search-form__btn--plus" type="button">+</button><input  class= "search-form__amount" type="text" value="2"><button class="search-form__btn  search-form__btn--minus" type="button">-</button>
+          </div>
+
+          <div class="search-form__col">
+            <label class="search-form__label" for="">Дети:</label>
+            <button class="search-form__btn  search-form__btn--plus" type="button">+</button><input  class= "search-form__amount" type="text" value="0"><button class="search-form__btn  search-form__btn--minus" type="button">-</button>
+          </div>
+
+        </div>
+                
       </form>
     </section>
 
