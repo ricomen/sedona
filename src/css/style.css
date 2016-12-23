@@ -612,20 +612,20 @@ body {
   display: inline-block;
 
   width: 75px;
-  height: 75px;
+  height: 76px;
   margin-bottom: 35px;
 
-  background-image: url("../img/recomends-sptite.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
 }
 .recomends__icon--home {
-  background-position: -5px -168px;
+  background-position: 0 -307px;
 }
 .recomends__icon--food {
-  background-position: -5px -86px;
+  background-position: 0 -227px;
 }
 .recomends__icon--gift {
-  background-position: -5px -5px;
+  background-position: 0 -389px;
 }
 .recomends__title {
   font-size: 21px;
@@ -643,6 +643,10 @@ body {
   padding: 0;
 }
 .search-hotel {
+  width: 570px;
+  margin-right: auto;
+  margin-left: auto;
+
   text-align: center;
 }
 .search-hotel__title {
@@ -737,6 +741,9 @@ body {
   outline: none;
   background-color: #f2f2f2;
 }
+.search-form__field:hover {
+  background-color: #ebebeb;
+}
 .number {
   float: right;
 }
@@ -768,4 +775,35 @@ body {
   border: none;
   outline: none;
   background-color: #f2f2f2;
+}
+.btn {
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  display: inline-block;
+
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #81b3d2;
+}
+.btn:hover {
+  background-color: #d6494d;
+}
+.btn:active {
+  box-shadow: inset 0 2px 2px #000;
+}
+.btn--search {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 24px;
+
+  display: block;
+
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
