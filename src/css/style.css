@@ -745,9 +745,17 @@ body {
   border: none;
   outline: none;
   background-color: #f2f2f2;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-position: 315px -103px;
 }
 .search-form__field:hover {
   background-color: #ebebeb;
+  background-position: 315px -135px;
+}
+.search-form__field:focus {
+  background-position: 315px -71px;
 }
 .number {
   float: right;
@@ -810,7 +818,10 @@ body {
   background-color: #766357;
 }
 .btn--search:hover {
-  background-color: #fff;
+  background-color: #64544a;
+}
+.btn--search:active {
+  color: rgba(255, 255, 255, .3);
 }
 .btn--find {
   font-size: 21px;
@@ -826,5 +837,6 @@ body {
   background-color: #669ec0;
 }
 .btn--find:active {
+  color: rgba(255, 255, 255, .3);
   background-color: #5496bd;
 }

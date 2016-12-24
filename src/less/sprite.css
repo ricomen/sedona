@@ -16,11 +16,65 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-calendar-focus {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -80px;
+  width: 21px;
+  height: 22px;
+}
+.icon-calendar-hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -144px;
+  width: 21px;
+  height: 22px;
+}
+.icon-calendar-normal {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -112px;
+  width: 21px;
+  height: 22px;
+}
 .icon-facebook {
   background-image: url(../img/sprite.png);
   background-position: 0px -51px;
   width: 10px;
   height: 19px;
+}
+.icon-gift {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -485px;
+  width: 64px;
+  height: 76px;
+}
+.icon-hamburger {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -323px;
+  width: 74px;
+  height: 70px;
+}
+.icon-home {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -403px;
+  width: 75px;
+  height: 72px;
+}
+.icon-html-academy-active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -176px;
+  width: 113px;
+  height: 39px;
+}
+.icon-html-academy-hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -225px;
+  width: 113px;
+  height: 39px;
+}
+.icon-html-academy-normal {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -274px;
+  width: 113px;
+  height: 39px;
 }
 .icon-twitter {
   background-image: url(../img/sprite.png);
@@ -33,23 +87,4 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: 0px -25px;
   width: 20px;
   height: 16px;
-}
-
-.icon-html-academy-active {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -80px;
-  width: 113px;
-  height: 39px;
-}
-.icon-html-academy-hover {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -129px;
-  width: 113px;
-  height: 39px;
-}
-.icon-html-academy-normal {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -178px;
-  width: 113px;
-  height: 39px;
 }
