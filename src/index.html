@@ -115,7 +115,7 @@
       <a href="#" class="btn  btn--search">Поиск гостиницы в седоне</a>
 
     </section>
-    <section class="map">
+    <section class="map" id="map">
       <form class="search-form" action="/" method="get">
 
         <div class="search-form__row">
@@ -173,5 +173,23 @@
       </a>
     </section>
   </footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script>
+    ymaps.ready(init);
+      var myMap,
+          myPlacemark;  
+      function init(){     
+        myMap = new ymaps.Map("map", {
+             center: [34.865966, -111.763806],
+             controls: [],
+             zoom: 15,
+
+        });
+        myMap.behaviors.disable('scrollZoom');     
+        myPlacemark = new ymaps.Placemark([34.865966, -111.763806], {});
+        myMap.geoObjects.add(myPlacemark);
+        }
+  </script>
 </body>
 </html>
