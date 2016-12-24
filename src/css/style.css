@@ -432,7 +432,6 @@ body {
   text-transform: uppercase;
 
   color: #000;
-  outline: 1px solid black;
   background-color: #fff;
 }
 .navigation {
@@ -665,7 +664,7 @@ body {
 .map {
   position: relative;
 
-  height: 400px;
+  height: 472px;
 
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
@@ -787,6 +786,7 @@ body {
 
   display: inline-block;
 
+  cursor: pointer;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
@@ -796,12 +796,6 @@ body {
   border: none;
   outline: none;
   background-color: #81b3d2;
-}
-.btn:hover {
-  background-color: #d6494d;
-}
-.btn:active {
-  box-shadow: inset 0 2px 2px #000;
 }
 .btn--search {
   font-size: 21px;
@@ -815,6 +809,22 @@ body {
 
   background-color: #766357;
 }
-.btn--search :hover {
+.btn--search:hover {
   background-color: #fff;
+}
+.btn--find {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+
+  display: block;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.btn--find:hover {
+  background-color: #669ec0;
+}
+.btn--find:active {
+  background-color: #5496bd;
 }
