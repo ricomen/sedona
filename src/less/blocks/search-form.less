@@ -7,6 +7,7 @@
   padding: 55px; 
   z-index: 10;
   background-color: #fff; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
   &__row {
     .clearfix();
     margin-bottom: 29px;
@@ -81,13 +82,36 @@
 
   }
   &__btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
     margin: 0;
     padding: 0;
-    border: none;
-    outline: none;
     background-color: #f2f2f2;
     width: 38px;
     height: 38px;
     font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;    
+    font-family: "symbols-sedona";
+    text-align: center;
+    text-transform: none;
+    font-style: normal;
+    font-variant: normal;
+    border: none;
+    outline: none;
+    color: #a9a9a9;
+    &:hover {
+      color: #000;
+    }
+    &:active {
+      color: @base-color;
+    }
+    &--plus::after {
+      content: "\e801";      
+    }
+    &--minus::after {
+      content: "\e802";      
+    }
   }
 }

@@ -419,6 +419,13 @@ template {
 [hidden] {
   display: none;
 }
+@font-face {
+  font-family: "symbols-sedona";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../fonts/symbols-sedona.woff") format("woff"), url("../fonts/symbols-sedona.woff2") format("woff2");
+}
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
@@ -681,6 +688,7 @@ body {
   padding: 55px;
 
   background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
 }
 .search-form__row {
   margin-bottom: 29px;
@@ -779,16 +787,42 @@ body {
   background-color: #f2f2f2;
 }
 .number__btn {
+  font-family: "symbols-sedona";
   font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 16px;
+
+  position: relative;
+
+  display: inline-block;
 
   width: 38px;
   height: 38px;
   margin: 0;
   padding: 0;
 
+  text-align: center;
+  vertical-align: top;
+  text-transform: none;
+
+  color: #a9a9a9;
   border: none;
   outline: none;
   background-color: #f2f2f2;
+}
+.number__btn:hover {
+  color: #000;
+}
+.number__btn:active {
+  color: #81b3d2;
+}
+.number__btn--plus::after {
+  content: "\e801";
+}
+.number__btn--minus::after {
+  content: "\e802";
 }
 .btn {
   font-family: "PT Sans", "Arial", sans-serif;
