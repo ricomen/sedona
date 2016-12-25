@@ -618,13 +618,13 @@ body {
   background-repeat: no-repeat;
 }
 .recomends__icon--home {
-  background-position: 0 -307px;
+  background-position: 0 -403px;
 }
 .recomends__icon--food {
-  background-position: 0 -227px;
+  background-position: 0 -323px;
 }
 .recomends__icon--gift {
-  background-position: 0 -389px;
+  background-position: 0 -485px;
 }
 .recomends__title {
   font-size: 21px;
