@@ -652,12 +652,13 @@ body {
   font-size: 30px;
   line-height: 34px;
 
-  margin: 0;
-  padding: 0;
+  margin: 0 0 30px 0;
 }
 .search-hotel__description {
   font-size: 14px;
   line-height: 24px;
+
+  margin: 0 0 45px 0;
 
   text-align: center;
 }
