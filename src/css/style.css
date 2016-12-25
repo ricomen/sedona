@@ -875,3 +875,74 @@ body {
   color: rgba(255, 255, 255, .3);
   background-color: #5496bd;
 }
+.page-footer {
+  display: -ms-flexbox;
+  display: flex;
+
+  padding: 36px 73px;
+
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.tags,
+.copyright {
+  width: 240px;
+
+  text-align: center;
+}
+.social {
+  width: 400px;
+
+  text-align: center;
+  text-decoration: none;
+}
+.social__btn {
+  font-family: "symbols-sedona";
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+
+  position: relative;
+
+  display: inline-block;
+
+  width: 47px;
+  height: 47px;
+  margin-right: 6px;
+
+  text-align: center;
+  vertical-align: top;
+  text-decoration: inherit;
+  text-transform: none;
+
+  color: #fff;
+  background-color: #81b3d2;
+}
+.social__btn:hover {
+  background-color: #669ec0;
+}
+.social__btn:active {
+  color: rgba(255, 255, 255, .3);
+  background-color: #5496bd;
+}
+.social__btn::after {
+  font-size: 19px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  display: inline-block;
+
+  vertical-align: top;
+}
+.social__btn--tw::after {
+  content: "\74";
+}
+.social__btn--fb::after {
+  content: "\66";
+}
+.social__btn--yt::after {
+  content: "\f39e";
+}

@@ -1,0 +1,66 @@
+.page-footer {
+  padding: 36px 73px;
+  display: flex;
+  justify-content: space-between;
+}
+.tags,
+.copyright {
+  text-align: center;
+  width: 240px;  
+}
+.social {
+  text-align: center;
+  width: 400px;  
+  text-decoration: none;
+  &__btn { 
+  position: relative; 
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+  width: 47px;
+  height: 47px;  
+  background-color: @base-color;  
+  font-weight: normal;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  color: #fff;
+    &:hover {
+      background-color: #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, .3)
+    }
+    &::after {
+      left: 15px;
+      top: 15px;
+      position: absolute;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 19px;
+      line-height: 20px;
+    } 
+    &--tw {
+      &::after {
+        content: "\74";
+      }  
+    }
+    &--fb {
+      &::after {
+      content: "\66";
+      }
+    }
+    &--yt {
+      &::after {
+      content: "\f39e";
+      }
+    }
+  }
+}
+.copyright {
+
+}
