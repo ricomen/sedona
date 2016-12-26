@@ -6,7 +6,17 @@
 .tags,
 .copyright {
   text-align: center;
-  width: 240px;  
+  width: 240px; 
+  padding-top: 12px;
+}
+.tags {
+  font-size: 21px; 
+  line-height: 26px;
+  font-weight: bold;  
+  &__item {
+    text-decoration: none;
+    color: #000;    
+  }
 }
 .social {
   text-align: center;
@@ -62,5 +72,26 @@
   }
 }
 .copyright {
-
+  &__item {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-right: 8px;
+  }
+  &__link {   
+    display: inline-block; 
+    vertical-align: middle;
+    width: 113px;
+    height: 39px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 0px -274px;
+    &:hover {
+      background-position: 0px -225px;
+    }
+    &:active {
+      background-position: 0px -176px;
+    }
+  }
 }

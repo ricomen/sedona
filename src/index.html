@@ -25,7 +25,7 @@
     
   </header>
   <div class="promo">
-    <img src="img/promo-logo.png" width="458" width="352" alt="Sedona">
+    <img src="img/promo-logo.png" width="458" height="352" alt="Sedona">
   </div>
 
   <main class="page-main">
@@ -116,34 +116,35 @@
 
     </section>
     <section class="map" id="map">
+
       <form class="search-form" action="/" method="get">
 
         <div class="search-form__row">
-          <label class="search-form__label">Дата заезда:</label><input class="search-form__field" type="date" name="firstDate">
+          <label for="entry" class="search-form__label">Дата заезда:</label><input class="search-form__field" id="entry" type="text" name="firstDate">
         </div>
 
         <div class="search-form__row">
-          <label class="search-form__label">Дата выезда:</label><input class="search-form__field" type="date" name="lastDate">
+          <label for="departure" class="search-form__label">Дата выезда:</label><input class="search-form__field" id="departure" type="text" name="lastDate">
         </div>
 
         <div class="search-form__row">
 
           <div class="search-form__col">
-            <label class="search-form__label" for="">Взрослые:</label>           
+            <label class="search-form__label" for="adult">Взрослые:</label>           
             <div class="number">
               <button class="number__btn  number__btn--minus" type="button"></button>
-              <input  class= "number__field" type="text" value="2">
+              <input  class= "number__field" id="adult" type="text" value="2">
               <button class="number__btn  number__btn--plus" type="button"></button>
             </div>
 
           </div>
 
           <div class="search-form__col">
-            <label class="search-form__label" for="">Дети:</label>
+            <label class="search-form__label" for="child">Дети:</label>
 
             <div class="number">
               <button class="number__btn  number__btn--minus" type="button"></button>
-              <input  class= "number__field" type="text" value="0">
+              <input  class= "number__field" id="child" type="text" value="0">
               <button class="number__btn  number__btn--plus" type="button"></button>
             </div>
 
@@ -166,11 +167,14 @@
       <a href="http://www.facebook.com" class="social__btn social__btn--fb"></a>
       <a href="http://www.youtube.com" class="social__btn social__btn--yt"></a>
     </section>
+
     <section class="copyright">
-      <a class="copyright__link">Website by
-         <img src="" width="113" height="39" alt="Copyright">
-      </a>
+      <span class="copyright__item">Website by</span>
+      <a class="copyright__link" href="http://www.htmlacademy.ru">
+      </a>         
+
     </section>
+
   </footer>
 
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>

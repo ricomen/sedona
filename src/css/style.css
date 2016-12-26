@@ -887,8 +887,19 @@ body {
 .tags,
 .copyright {
   width: 240px;
+  padding-top: 12px;
 
   text-align: center;
+}
+.tags {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.tags__item {
+  text-decoration: none;
+
+  color: #000;
 }
 .social {
   width: 400px;
@@ -945,4 +956,31 @@ body {
 }
 .social__btn--yt::after {
   content: "\f39e";
+}
+.copyright__item {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+
+  margin-right: 8px;
+
+  text-transform: uppercase;
+}
+.copyright__link {
+  display: inline-block;
+
+  width: 113px;
+  height: 39px;
+
+  vertical-align: middle;
+
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -274px;
+}
+.copyright__link:hover {
+  background-position: 0 -225px;
+}
+.copyright__link:active {
+  background-position: 0 -176px;
 }
