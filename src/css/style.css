@@ -441,6 +441,10 @@ body {
   color: #000;
   background-color: #fff;
 }
+.container {
+  width: 1056px;
+  margin: 0 auto;
+}
 .navigation {
   min-height: 55px;
 }
@@ -879,6 +883,96 @@ body {
 .btn--find:active {
   color: rgba(255, 255, 255, .3);
   background-color: #5496bd;
+}
+.filter {
+  padding: 30px 0;
+
+  color: #fff;
+  background: #81b3d2 url("../img/filter-bg.jpg") no-repeat center top;
+}
+.filter:before,
+.filter:after {
+  display: table;
+
+  content: "";
+}
+.filter:after {
+  clear: both;
+}
+.filter__column {
+  width: 50%;
+}
+.filter__column--left {
+  float: left;
+}
+.filter__column--right {
+  float: right;
+
+  width: 328px;
+}
+.filter fieldset {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  otline: none;
+}
+.filter legend {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+
+  margin-bottom: 20px;
+}
+.filter-form__checkbox {
+  display: none;
+}
+.filter-form__checkbox:checked + label::before {
+  content: "\2611";
+}
+.filter-form__checkbox--disabled + label,
+.filter-form__checkbox:disabled + label {
+  cursor: default;
+
+  color: #6a6a6a;
+}
+.filter-form label {
+  font-size: 14px;
+  line-height: 21px;
+
+  position: relative;
+
+  display: block;
+
+  margin-bottom: 25px;
+  padding-left: 40px;
+
+  cursor: pointer;
+}
+.filter-form label::before {
+  font-family: "symbols-sedona";
+  font-size: 26px;
+  line-height: 21px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+
+  content: "\2610";
+  vertical-align: top;
+}
+.filter-form label:last-child {
+  margin-bottom: 0;
+}
+.filter-form__field {
+  float: left;
+
+  width: 157px;
 }
 .page-footer {
   display: -ms-flexbox;
