@@ -683,12 +683,17 @@ body {
   top: 0;
   left: 50%;
 
+  display: none;
+
   width: 460px;
   margin-left: -285px;
   padding: 55px;
 
   background-color: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+}
+.search-form--show {
+  display: block;
 }
 .search-form__row {
   margin-bottom: 29px;
