@@ -29,34 +29,42 @@
     
     <section class="filter">
       <div class="container">
-        <form class="filter-form" action="/" method="get">
-          <div class="filter__column  filter__column--left">
-            <fieldset>
+        <form class="filter-form" action="/" method="get">     
+
+            <fieldset class="filter-form__column">
+
               <legend>Инфраструктура:</legend>            
               <input class="filter-form__checkbox" type="checkbox" id="pool" name="pool"><label for="pool">Бассейн</label>
               <input class="filter-form__checkbox" type="checkbox" id="parking" name="parking"><label for="parking">Парковка</label>
               <input class="filter-form__checkbox" type="checkbox" id="wireless" name="wifi"><label for="wireless">Wi-Fi</label>
             </fieldset>
-            <fieldset>
+
+            <fieldset class="filter-form__column">
+
               <legend>Тип жилья:</legend>
               <input class="filter-form__checkbox" type="checkbox" id="hotl" name="hotel" disabled><label for="hotl">Гостиница</label>
               <input class="filter-form__checkbox" type="checkbox" id="motl" name="motel"><label for="motl">Мотель</label>
               <input class="filter-form__checkbox" type="checkbox" id="apart" name="apartment"><label for="apart">Апартаменты</label>
             </fieldset>         
-          </div>
-          <div class="filter__column  filter__column--right"> 
-            <fieldset>
-              <legend>Стоимость в сутки (р):</legend>
-              <input class="filter-form__field" type="text" name="low-price">
-              <input class="filter-form__field" type="text" name="max-price">
+            
 
-              <div class="range">
-                
+            <fieldset class="filter-form__column">
+              <legend>Стоимость в сутки (р):</legend>
+              <div class="range__price">
+                <input class="range__field" type="text" name="low-price" value="0"><input class="range__field" type="text" name="max-price" value="3000">
               </div>
 
+              <div class="range__controls">
+                <div class="range__scale">
+                  <div class="range__bar" style="width: 70%"></div>
+                </div>
+                <div class="range__toggle  range__toggle--min"></div>
+                <div class="range__toggle  range__toggle--max"></div>
+             
+              </div>
+              <button class="btn btn--tranparent" type=button>Показать</button>
             </fieldset>
 
-            <button class="btn" type=button>Показать</button>
 
           </div>          
         </form>

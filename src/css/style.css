@@ -867,6 +867,20 @@ body {
 .btn--search:active {
   color: rgba(255, 255, 255, .3);
 }
+.btn--tranparent {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  display: block;
+
+  margin: 0 auto;
+  padding: 5px 35px;
+
+  border: 2px solid #fff;
+  border-radius: 3px;
+  background: transparent;
+}
 .btn--find {
   font-size: 21px;
   font-weight: bold;
@@ -890,35 +904,11 @@ body {
   color: #fff;
   background: #81b3d2 url("../img/filter-bg.jpg") no-repeat center top;
 }
-.filter:before,
-.filter:after {
-  display: table;
-
-  content: "";
-}
-.filter:after {
-  clear: both;
-}
-.filter__column {
-  width: 50%;
-}
 .filter__column--left {
   float: left;
 }
 .filter__column--right {
   float: right;
-
-  width: 328px;
-}
-.filter fieldset {
-  display: inline-block;
-
-  margin: 0;
-  padding: 0;
-
-  border: none;
-
-  otline: none;
 }
 .filter legend {
   font-size: 16px;
@@ -926,6 +916,31 @@ body {
   line-height: 21px;
 
   margin-bottom: 20px;
+}
+.filter-form:before,
+.filter-form:after {
+  display: table;
+
+  content: "";
+}
+.filter-form:after {
+  clear: both;
+}
+.filter-form__column {
+  float: left;
+
+  width: 240px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  otline: none;
+}
+.filter-form__column:last-child {
+  float: right;
+
+  width: 328px;
 }
 .filter-form__checkbox {
   display: none;
@@ -969,10 +984,80 @@ body {
 .filter-form label:last-child {
   margin-bottom: 0;
 }
-.filter-form__field {
-  float: left;
+.range {
+  width: 428px;
+  padding-left: 10px;
 
-  width: 157px;
+  background-color: rgba(255, 0, 0, .5);
+}
+.range__price {
+  width: 314px;
+  margin-left: 10px;
+
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+.range__field {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  width: 155px;
+  margin: 0;
+  padding: 5px 0;
+
+  text-align: center;
+
+  color: #fff;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.range__field:first-child {
+  border-right: 2px solid #fff;
+}
+.range__controls {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 318px;
+  height: 42px;
+  margin-bottom: 12px;
+  margin-left: 10px;
+}
+.range__scale {
+  height: 2px;
+  margin-top: 20px;
+
+  background-color: #8f8281;
+}
+.range__bar {
+  height: 2px;
+
+  background-color: #fff;
+}
+.range__toggle {
+  position: absolute;
+  top: 11px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+
+  cursor: pointer;
+
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 1px 1px #000;
+}
+.range__toggle:hover {
+  background-color: #1c4f80;
+}
+.range__toggle--max {
+  left: 213px;
 }
 .page-footer {
   display: -ms-flexbox;
