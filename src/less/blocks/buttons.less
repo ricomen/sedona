@@ -18,10 +18,45 @@
     padding-top: 17px;
     padding-bottom: 17px;
     background-color: @brown-color;
+  }
+  &--search,
+  &--brown {
     &:hover {
       background-color: #64544a;
     }
     &:active {
+      color: rgba(255, 255, 255, 0.3);      
+    }    
+  }
+  &--small {   
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    padding: 3px 16px;
+  }
+  &--blue {
+    color: #fff;
+    background-color: @base-color;    
+  }
+  &--brown {
+    color: #fff;
+    background-color: @brown-color; 
+  }
+  &--find {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 21px;
+    line-height: 26px;   
+    font-weight: bold;
+  }
+  &--blue,
+  &--find { 
+    &:hover {
+      background-color: #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
       color: rgba(255, 255, 255, 0.3);
     }
   }
@@ -34,21 +69,12 @@
     border: 2px solid #fff;
     border-radius: 3px;
     margin: 0 auto;
-    padding: 5px 35px ;
-  }
-  &--find {
-    display: block;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: 21px;
-    line-height: 26px;   
-    font-weight: bold;
-    &:hover {
-      background-color: #669ec0;
-    }
+    padding: 5px 35px;
+    transition: background 0.1s;
+    &:hover,
     &:active {
-      background-color: #5496bd;
-      color: rgba(255, 255, 255, 0.3);
+      color: #000;
+      background-color: #fff;
     }
   }
 } 

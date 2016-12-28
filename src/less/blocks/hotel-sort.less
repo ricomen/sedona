@@ -1,0 +1,43 @@
+.hotel-sort {  
+  padding: 32px 0;  
+  &__title {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-right: 45px;
+  }
+  &__list {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;     
+    list-style: none;    
+  }
+  &__item {
+    float: left;    
+    font-size: 12px;
+    line-height: 21px;
+    margin-right: 35px;
+    &:last-child {  
+    float: right;
+    margin-right: 0;    
+    }
+  }
+  &__link {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    color: #cacaca;    
+    border-bottom: 2px dotted @base-color;
+    &:hover {
+      color: @base-color;
+    }        
+    &--active {
+      color: @base-color;      
+      border: none;
+    }
+  }
+}
