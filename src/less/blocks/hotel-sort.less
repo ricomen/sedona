@@ -1,25 +1,24 @@
 .hotel-sort {  
-  padding: 32px 0;  
+  padding: 32px 73px;  
+  .clearfix();
   &__title {
-    display: inline-block;
-    vertical-align: bottom;
+    float: left;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     margin-right: 45px;
   }
-  &__list {
-    display: inline-block;
-    vertical-align: bottom;
+  &__list {  
     margin: 0;
     padding: 0;     
-    list-style: none;    
+    list-style: none;
+    margin-top: 5px;   
   }
   &__item {
     float: left;    
     font-size: 12px;
     line-height: 21px;
-    margin-right: 35px;
+    margin-right: 35px;    
     &:last-child {  
     float: right;
     margin-right: 0;    
@@ -35,9 +34,28 @@
     &:hover {
       color: @base-color;
     }        
+    &--up,
+    &--down {
+      &:hover {
+        color: #000;
+      }      
+    }
+    &--up {      
+        border: none;
+      &::after {
+        content: "\25b2";
+      }
+    }
+    &--down {
+        border: none;       
+      &::after {
+        content: "\25bc";
+      }
+    }
     &--active {
       color: @base-color;      
       border: none;
+      cursor: default;
     }
   }
 }
