@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200"> 
+    <title>Заголовок</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Фото и видео</a></li>
+          <li class="navigation__item">
+            <a class="logo" href="index.html">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип">
+        </a>
+          </li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Карта штата</a></li>        
+          <li class="navigation__item  navigation__item--active"><a class="navigation__link" href="#">Гостиницы</a></li>
+        </ul>
+      </nav>    
+    </header>
+    <div class="promo">
+      <img src="img/promo-logo.png" width="458" height="352" alt="Sedona">
+    </div>
+    <main class="page-main">
+      <section class="reasons">
+        <h1 class="reasons__title">Седона &mdash; небольшой городок в аризоне, заслуживающий большего!</h1>
+        <p class="reasons__description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>      
+        <div class="reasons__row">
+          <div class="reason  reason--blue"> 
+            <h3 class="reason__title">Настоящий городок</h3>
+            <span class="reason__number">1</span>
+            <p class="reason__content">Седона &mdash; не атракцион для туристов, та течет своя жизнь</p>
+          </div>
+          <div class="reason-picture">
+            <img src="img/reasons-bg-1.jpg" width="800" height="255" alt="Настоящий городок">
+          </div>
+        </div> 
+        <div class="reasons__row">
+          <div class="recomends">
+            <div class="recomends__item">
+              <span class="recomends__icon recomends__icon--home">
+              </span>
+              <div class="recomends__title">Жилье</div>
+              <p class="recomends__content">Рекомендуем пожить в настоящем отеле, все как в кино</p>
+            </div>
+            <div class="recomends__item">
+              <span class="recomends__icon recomends__icon--food">
+              </span>
+              <div class="recomends__title">Еда</div>
+              <p class="recomends__content">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+            </div>
+            <div class="recomends__item">
+              <span class="recomends__icon recomends__icon--gift">
+              </span>
+              <div class="recomends__title">Сувениры</div>
+              <p class="recomends__content">Не только китайского, но и местного производства</p>
+            </div>
+          </div>
+        </div>
+        <div class="reasons__row">
+           <div class="reason-picture">
+            <img src="img/reasons-bg-2.jpg" width="800" height="255" alt="Мост дьявола">
+          </div>
+          <div class="reason reason--blue">
+            <h3 class="reason__title">Там есть мост дъявола</h3>
+            <span class="reason__number">2</span>
+            <p class="reason__content">Да, по нему можно пройти если конечно вы осмелитесь</p>
+          </div>
+        </div>
+        <div class="reasons__row reasons__row--grey">
+          <div class="reason">
+            <h3 class="reason__title">Небольшая площадь</h3>
+            <span class="reason__number">3</span>
+            <p class="reason__content">Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="reason">
+            <h3 class="reason__title">Красивая дорога</h3>
+            <span class="reason__number">4</span>
+            <p class="reason__content">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="reason">
+            <h3 class="reason__title">Мало туристов</h3>
+            <span class="reason__number">5</span>
+            <p class="reason__content">Большинство едет в гранд каньон и толпиться там</p>
+          </div>
+        </div>
+      </section>
+      <section class="search-hotel">
+        <h2 class="search-hotel__title">Заинтересовались?</h2>
+        <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a href="#" class="btn  btn--search">Поиск гостиницы в седоне</a>
+      </section>
+      <section class="map" id="map">
+        <form class="search-form" action="/" method="get">
+          <div class="search-form__row">
+            <label for="entry" class="search-form__label">Дата заезда:</label><input class="search-form__field" id="entry" type="text" name="firstDate">
+          </div>
+          <div class="search-form__row">
+            <label for="departure" class="search-form__label">Дата выезда:</label><input class="search-form__field" id="departure" type="text" name="lastDate">
+          </div>
+          <div class="search-form__row">
+            <div class="search-form__col">
+              <label class="search-form__label" for="adult">Взрослые:</label>           
+              <div class="number">
+                <button class="number__btn  number__btn--minus" type="button"></button>
+                <input  class= "number__field" id="adult" type="text" value="2">
+                <button class="number__btn  number__btn--plus" type="button"></button>
+              </div>
+            </div>
+            <div class="search-form__col">
+              <label class="search-form__label" for="child">Дети:</label>
+              <div class="number">
+                <button class="number__btn  number__btn--minus" type="button"></button>
+                <input  class= "number__field" id="child" type="text" value="0">
+                <button class="number__btn  number__btn--plus" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn--find">Найти</a>                
+        </form>
+      </section>    
+    </main>
+    <footer class="page-footer">
+      <section class="tags">
+        <a href="#" class="tags__item">&#35;visitsedona</a>
+      </section>
+      <section class="social">
+        <a href="http://www.twitter.com" class="social__btn  social__btn--tw"></a>
+        <a href="http://www.facebook.com" class="social__btn social__btn--fb"></a>
+        <a href="http://www.youtube.com" class="social__btn social__btn--yt"></a>
+      </section>
+      <section class="copyright">
+        <span class="copyright__item">Website by</span>
+        <a class="copyright__link" href="http://www.htmlacademy.ru">
+        </a> 
+      </section>
+    </footer>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script>
+    ymaps.ready(init);
+      var myMap,
+          myPlacemark;  
+      function init(){     
+        myMap = new ymaps.Map("map", {
+             center: [34.865966, -111.763806],
+             controls: [],
+             zoom: 15,
+        });
+        myMap.behaviors.disable('scrollZoom');     
+        myPlacemark = new ymaps.Placemark([34.865966, -111.763806], {});
+        myMap.geoObjects.add(myPlacemark);
+        }
+  </script>
+</body>
+</html>

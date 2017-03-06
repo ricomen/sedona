@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=960"> 
+    <title>Заголовок</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Фото и видео</a></li>
+          <li class="navigation__item">
+            <a class="logo" href="index.html">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип">
+        </a>
+          </li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Карта штата</a></li>        
+          <li class="navigation__item  navigation__item--active"><a class="navigation__link" href="#">Гостиницы</a></li>
+        </ul>
+      </nav>    
+    </header> 
+    <main class="page-main">      
+      <section class="filter">        
+          <form class="filter-form" action="/" method="get">
+            <fieldset class="filter-form__column">
+              <legend>Инфраструктура:</legend>
+              <input class="filter-form__checkbox" type="checkbox" id="pool" name="pool"><label for="pool">Бассейн</label>
+              <input class="filter-form__checkbox" type="checkbox" id="parking" name="parking"><label for="parking">Парковка</label>
+              <input class="filter-form__checkbox" type="checkbox" id="wireless" name="wifi"><label for="wireless">Wi-Fi</label>
+            </fieldset>
+            <fieldset class="filter-form__column">
+              <legend>Тип жилья:</legend>
+              <input class="filter-form__checkbox" type="checkbox" id="hotl" name="hotel" disabled><label for="hotl">Гостиница</label>
+              <input class="filter-form__checkbox" type="checkbox" id="motl" name="motel"><label for="motl">Мотель</label>
+              <input class="filter-form__checkbox" type="checkbox" id="apart" name="apartment"><label for="apart">Апартаменты</label>
+            </fieldset> 
+            <fieldset class="filter-form__column">
+              <legend>Стоимость в сутки (р):</legend>
+              <div class="range__price">
+                <input class="range__field" type="text" name="low-price" value="0"><input class="range__field" type="text" name="max-price" value="3000">
+              </div>
+              <div class="range__controls">
+                <div class="range__scale">
+                  <div class="range__bar" style="width: 70%"></div>
+                </div>
+                <div class="range__toggle  range__toggle--min"></div>
+                <div class="range__toggle  range__toggle--max"></div>             
+              </div>
+              <button class="btn btn--tranparent" type=button>Показать</button>
+            </fieldset>                   
+        </form>    
+      </section>
+      <div class="hotel-sort">
+        <div class="hotel-sort__title">Найдено: 3</div>
+        <ul class="hotel-sort__list">       
+          <li class="hotel-sort__item">Сортировка:</li>
+          <li class="hotel-sort__item">
+            <a href="#" class="hotel-sort__link  hotel-sort__link--active">По цене</a>
+          </li>
+          <li class="hotel-sort__item">
+            <a href="#" class="hotel-sort__link">По типу</a>
+          </li>
+          <li class="hotel-sort__item">
+            <a href="#" class="hotel-sort__link">По рейтингу</a>
+          </li>
+          <li class="hotel-sort__item">
+            <a href="#" class="hotel-sort__link hotel-sort__link--up   hotel-sort__link--active"></a>
+            <a href="#" class="hotel-sort__link hotel-sort__link--down"></a>
+          </li>
+        </ul>
+      </div>    
+      <div class="hotel">
+        <div class="hotel__image">
+          <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara resort &amp; spa">
+        </div>
+        <div class="hotel__description">
+          <h2 class="hotel__title">Amara resort &amp; spa</h2>
+          <div class="hotel__description-col">
+             <span class="hotel__type">Гостиница</span>
+              <a href="#" class="btn  btn--small  btn--blue">Подробнее</a>
+          </div>
+          <div class="hotel__description-col">
+            <span class="hotel__price">от 3500 р.</span>
+            <a href="#" class="btn  btn--small  btn--brown">Забронировать</a>
+          </div>       
+        </div>
+        <div class="hotel__rating">
+          <div class="hotel__stars">
+            <span class="hotel__star"></span>
+            <span class="hotel__star"></span>
+            <span class="hotel__star"></span>
+            <span class="hotel__star"></span>
+          </div>
+          <div class="hotel__rating-value">Рейтинг: 8,5</div>
+        </div>
+      </div>
+      <div class="hotel">
+        <div class="hotel__image">
+          <img src="img/hotel-2.jpg" width="135" height="90" alt="Amara resort &amp; spa">
+        </div>
+        <div class="hotel__description">
+          <h2 class="hotel__title">Amara resort &amp; spa</h2>
+          <div class="hotel__description-col">
+             <span class="hotel__type">Мотель</span>
+              <a href="#" class="btn  btn--small  btn--blue">Подробнее</a>
+          </div>
+          <div class="hotel__description-col">
+            <span class="hotel__price">от 2000 р.</span>
+            <a href="#" class="btn  btn--small  btn--brown">Забронировать</a>
+          </div>       
+        </div>
+        <div class="hotel__rating">
+          <div class="hotel__stars">
+            <span class="hotel__star"></span>
+            <span class="hotel__star"></span>
+          </div>
+          <div class="hotel__rating-value">Рейтинг: 8,9</div>
+        </div>
+      </div>
+      <div class="hotel">
+        <div class="hotel__image">
+          <img src="img/hotel-3.jpg" width="135" height="90" alt="Amara resort &amp; spa">
+        </div>
+        <div class="hotel__description">
+          <h2 class="hotel__title">Amara resort &amp; spa</h2>
+          <div class="hotel__description-col">
+             <span class="hotel__type">Апартаменты </span>
+              <a href="#" class="btn  btn--small  btn--blue">Подробнее</a>
+          </div>
+          <div class="hotel__description-col">
+            <span class="hotel__price">от 4000 р.</span>
+            <a href="#" class="btn  btn--small  btn--brown">Забронировать</a>
+          </div>       
+        </div>
+        <div class="hotel__rating">
+          <div class="hotel__stars">
+            <span class="hotel__star"></span>
+            <span class="hotel__star"></span>
+            <span class="hotel__star"></span>
+          </div>
+          <div class="hotel__rating-value">Рейтинг: 9,2</div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <section class="tags">
+        <a href="#" class="tags__item">&#35;visitsedona</a>
+      </section>
+      <section class="social">
+        <a href="http://www.twitter.com" class="social__btn  social__btn--tw"></a>
+        <a href="http://www.facebook.com" class="social__btn social__btn--fb"></a>
+        <a href="http://www.youtube.com" class="social__btn social__btn--yt"></a>
+      </section>
+      <section class="copyright">
+        <span class="copyright__item">Website by</span>
+        <a class="copyright__link" href="http://www.htmlacademy.ru"></a>
+      </section>
+    </footer>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script>
+    ymaps.ready(init);
+      var myMap,
+          myPlacemark;  
+      function init(){     
+        myMap = new ymaps.Map("map", {
+             center: [34.865966, -111.763806],
+             controls: [],
+             zoom: 15,
+        });
+        myMap.behaviors.disable('scrollZoom');     
+        myPlacemark = new ymaps.Placemark([34.865966, -111.763806], {});
+        myMap.geoObjects.add(myPlacemark);
+        }
+  </script>
+</body>
+</html>
