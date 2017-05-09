@@ -94,10 +94,8 @@
       <section class="search-hotel">
         <h2 class="search-hotel__title">Заинтересовались?</h2>
         <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="#" class="btn  btn--search">Поиск гостиницы в седоне</a>
-      </section>
-      <section class="map" id="map">
-        <form class="search-form" action="/" method="get">
+        <a href="#" id="search-btn" class="btn  btn--search">Поиск гостиницы в седоне</a>
+        <form id="search-form" class="search-form" action="/" method="get">
           <div class="search-form__row">
             <label for="entry" class="search-form__label">Дата заезда:</label><input class="search-form__field" id="entry" type="text" name="firstDate">
           </div>
@@ -108,22 +106,24 @@
             <div class="search-form__col">
               <label class="search-form__label" for="adult">Взрослые:</label>           
               <div class="number">
-                <button class="number__btn  number__btn--minus" type="button"></button>
+                <button id="adult-minus" data-attr="adult" class="number__btn  number__btn--minus" type="button"></button>
                 <input  class= "number__field" id="adult" type="text" value="2">
-                <button class="number__btn  number__btn--plus" type="button"></button>
+                <button id="adult-plus" data-attr="adult" class="number__btn  number__btn--plus" type="button"></button>
               </div>
             </div>
             <div class="search-form__col">
               <label class="search-form__label" for="child">Дети:</label>
               <div class="number">
-                <button class="number__btn  number__btn--minus" type="button"></button>
+                <button id="child-minus" data-attr="child" class="number__btn  number__btn--minus" type="button"></button>
                 <input  class= "number__field" id="child" type="text" value="0">
-                <button class="number__btn  number__btn--plus" type="button"></button>
+                <button id="child-plus" data-attr="child" class="number__btn  number__btn--plus" type="button"></button>
               </div>
             </div>
           </div>
           <a href="#" class="btn btn--find">Найти</a>                
         </form>
+      </section>
+      <section class="map" id="map">
       </section>    
     </main>
     <footer class="page-footer">
@@ -158,5 +158,6 @@
         myMap.geoObjects.add(myPlacemark);
         }
   </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
